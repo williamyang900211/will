@@ -1,28 +1,27 @@
 {% extends "base.html" %}
-
-{% block main %}
 {% load static %}
-
-
-
-
-<img src='/static/images/contact.jpg'/ height='450' width='319'>
-
-<address>
-
-
-
-  <strong>杨 晓葵</strong><br>
-
-
-
-  <a href="mailto:#">williamyang0211@outlook.com</a>
-
-
-
-</address>
-</div>
-
-
-
+{% block jumbotron %}
+{% endblock %}
+{% block main %}
+<div class="row justify-content-center">
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/contact.jepg' %}" class="card-img-top" alt="奶奶门前的鱼塘">
+    <div class="card-body">
+      <p class="card-text">南阳桥奶奶家门前的鱼塘，承载了很多记忆的地方。</p>
+      <address>
+  
+  
+  
+        <strong>杨 晓葵</strong><br>
+      
+      
+      
+        <a href="mailto:#">williamyang0211@outlook.com</a>
+      
+      
+      
+      </address>
+      </div>
+    </div>
+  </div>
 {% endblock %}

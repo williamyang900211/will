@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css"  href="{% static 'mainpage/main.css' %}">
     <link herf ="/static/mainpage/main.css">
 
-    <title>Will的个人网站</title>
+    <title>渌滨小站</title>
    
   </head>
   <body>
@@ -24,7 +24,7 @@
                 <a class="text-muted" href="{% url 'mainpage:mainpage' %}">Welcome</a>
               </div>
               <div class="col-4 text-center">
-                <a class="blog-header-logo text-dark" href="{% url 'mainpage:mainpage' %}">Will的个人网站</a>
+                <a class="blog-header-logo text-dark" href="{% url 'mainpage:mainpage' %}">渌滨小站</a>
               </div>
               <div class="col-4 d-flex justify-content-end align-items-center">
                 <!-- <a class="text-muted" href="#" aria-label="Search">
@@ -40,14 +40,9 @@
               <a class="p-2 text-muted" href="/Contact">关于</a>
             </nav>
           </div>
-        
-          <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-            <div class="col-md-6 px-0">
-              
-              <p class="lead my-3">{{Quote.quote}}</p>
-              <p class="lead mb-0"><cite title="Source Title" class='blockquote-reverse'>{{Quote.cite}}</cite></p>
-            </div>
-          </div>
+          {% block jumbotron %}
+         
+          {% endblock %}
         <!-- <div class="row mb-2">
             <div class="col-md-6">
               <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">

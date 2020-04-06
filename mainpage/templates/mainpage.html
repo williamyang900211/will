@@ -1,7 +1,19 @@
 {% extends "base.html" %}
-
-{% block main %}
 {% load static %}
+{% block jumbotron %}
+<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+  <div class="col-md-6 px-0">
+    <p class="lead my-3">{{Quote.quote}}</p>
+              <p class="lead mb-0"><cite title="Source Title" class='blockquote-reverse'>{{Quote.cite}}</cite></p>
+  
+   
+  </div>
+</div>
+              
+{% endblock %}
+{% block main %}
+
+
 
 {% endblock %}
 
